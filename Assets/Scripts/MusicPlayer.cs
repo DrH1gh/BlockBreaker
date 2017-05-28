@@ -23,27 +23,14 @@ public class MusicPlayer : MonoBehaviour {
         else
         {
             instance = this;
-            GameObject.DontDestroyOnLoad(gameObject); //gameObject = instance of the music player, e chiar tot obiectul pe care e pus scriptu (tot ce apare in ispector)
+            DontDestroyOnLoad(gameObject); //gameObject = instance of the music player, e chiar tot obiectul pe care e pus scriptu (tot ce apare in ispector)
         }
     }
 
     // Use this for initialization
     void Start() {
         Debug.Log("Music Player Start" + GetInstanceID());
-        #region old
-        /* VAR 1
-        if (musicplayerCount < 1)
-        {
-            GameObject.DontDestroyOnLoad(gameObject); //gameObject = instance of the music player, e chiar tot obiectul pe care e pus scriptu (tot ce apare in ispector)
-        }
-        musicplayerCount += 1;
-        */
-        #endregion
         
     }
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
