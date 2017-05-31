@@ -23,7 +23,7 @@ public class MusicPlayer : MonoBehaviour {
         else
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); //gameObject = instance of the music player, e chiar tot obiectul pe care e pus scriptu (tot ce apare in ispector)
+            DontDestroyOnLoad(gameObject);
         }
     }
 
